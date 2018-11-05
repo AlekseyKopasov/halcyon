@@ -3,12 +3,12 @@ html {
   margin: 0 auto;
   padding: 0;
 
-  @include open-sans-regular();
+  @include gotham-medium();
 
   font-size: 14px;
   font-style: normal;
-  line-height: 24px;
-  color: $grey-blue-color;
+  line-height: 20px;
+  color: $text-color;
 }
 
 html {
