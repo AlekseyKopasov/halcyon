@@ -20,6 +20,7 @@
 .feature__item-headline {
   margin: 0;
   padding: 0;
+
   @include gotham-medium();
   font-size: 15px;
   line-height: 20px;

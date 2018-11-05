@@ -1,6 +1,7 @@
 .main-header__headline {
   margin: 0;
   padding: 0;
+
   @include gotham-medium-book();
   font-size: 40px;
   line-height: 48px;
@@ -15,6 +16,7 @@
 .main-header__subheadline {
   margin: 0;
   padding: 0;
+
   @include gotham-medium-book();
   font-size: 15px;
   line-height: 18px;
@@ -32,7 +34,7 @@
   text-transform: uppercase;
   background-color: $green-color;
   border: 0;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .main-header__description-title {
