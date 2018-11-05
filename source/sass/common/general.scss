@@ -1,0 +1,27 @@
+body,
+html {
+  margin: 0 auto;
+  padding: 0;
+
+  @include open-sans-regular();
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  color: $grey-blue-color;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
