@@ -1,0 +1,55 @@
+.main-header__headline {
+  margin: 0;
+  padding: 0;
+  @include gotham-medium-book();
+  font-size: 40px;
+  line-height: 48px;
+  color: $black-color;
+  text-transform: uppercase;
+}
+
+.main-header__headline--grey {
+  color: $text-color;
+}
+
+.main-header__subheadline {
+  margin: 0;
+  padding: 0;
+  @include gotham-medium-book();
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.main-header__subheadline--italic {
+  @include gotham-medium-italic();
+}
+
+.main-header__button {
+  @include gotham-medium();
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $green-color;
+  border: 0;
+  border-radius: 5px
+}
+
+.main-header__description-title {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.main-header__description-text {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.main-header__description-text--accent {
+  color: $black-color;
+}

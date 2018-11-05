@@ -1,0 +1,36 @@
+.feature__headline {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.feature__list {
+  margin: 0;
+  padding: 0;
+}
+
+.feature__item {
+  @include list-reset();
+}
+
+.feature__item-headline {
+  margin: 0;
+  padding: 0;
+  @include gotham-medium();
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.feature__item-description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+}

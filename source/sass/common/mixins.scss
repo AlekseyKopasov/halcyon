@@ -4,17 +4,18 @@
   list-style: none;
 }
 
-@mixin open-sans-regular {
-  font-family: "Open Sans", "Arial", sans-serif;
+@mixin gotham-medium {
+  font-family: "Gotham Rounded Medium", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+@mixin gotham-medium-book {
+  font-family: "Gotham Rounded Book", "Arial", sans-serif;
   font-weight: 400;
 }
 
-@mixin open-sans-light {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
-}
-
-@mixin open-sans-bold {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 700;
+@mixin gotham-medium-italic {
+  font-family: "Gotham Rounded Medium Italic", "Arial", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
