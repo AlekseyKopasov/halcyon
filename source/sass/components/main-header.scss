@@ -13,7 +13,7 @@
   color: $text-color;
 }
 
-.main-header__subheadline {
+.main-header__descr {
   margin: 0;
   padding: 0;
 
@@ -22,7 +22,7 @@
   line-height: 18px;
 }
 
-.main-header__subheadline--italic {
+.main-header__descr--italic {
   @include gotham-medium-italic();
 }
 
