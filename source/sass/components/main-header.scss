@@ -1,10 +1,22 @@
+.main-header__promo {
+  margin: 0 auto;
+  padding-top: 257px;
+  padding-bottom: 343px;
+  text-align: center;
+  background-image: url("../img/bg_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-header__headline {
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
 
   @include gotham-medium-book();
   font-size: 40px;
   line-height: 48px;
+  letter-spacing: 12px;
   color: $black-color;
   text-transform: uppercase;
 }
@@ -16,6 +28,7 @@
 .main-header__descr {
   margin: 0;
   padding: 0;
+  padding-bottom: 66px;
 
   @include gotham-medium-book();
   font-size: 15px;
@@ -27,6 +40,7 @@
 }
 
 .main-header__button {
+  padding: 23px 40px;
   @include gotham-medium();
   font-size: 15px;
   line-height: 18px;
@@ -35,11 +49,29 @@
   background-color: $green-color;
   border: 0;
   border-radius: 5px;
+  box-shadow: inset 0 -3px 0 0 #309383;
+
+  &:hover,
+  &:focus {
+    background-color: #74c8bb;
+  }
+
+  &:active {
+    background-color: #309383;
+  }
+}
+
+.main-header__description {
+  padding-top: 107px;
+  padding-bottom: 130px;
+  text-align: center;
+  background-color: #f3f5f8;
 }
 
 .main-header__description-title {
   margin: 0;
   padding: 0;
+  padding-bottom: 110px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
@@ -48,10 +80,13 @@
 }
 
 .main-header__description-text {
+  width: 780px;
+  margin: 0 auto;
+  padding: 0 26px;
   font-size: 14px;
   line-height: 30px;
 }
 
-.main-header__description-text--accent {
+.main-header__text--accent {
   color: $black-color;
 }
