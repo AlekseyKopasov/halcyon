@@ -1,0 +1,73 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f3f5f5;
+  background-image: url("../img/slider_iphone-5s.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.slide-wrapper {
+  width: 50%;
+  margin-left: auto;
+  background-color: #ffffff;
+  box-shadow: -31px -1px 35px -16px rgba(0, 0, 0, 0.2); // TODO подобрать тень или сделать фон
+}
+
+.slide-headline {
+  margin: 0;
+  padding: 0;
+  padding-top: 130px;
+  padding-bottom: 80px;
+  text-align: center;
+
+  @include gotham-medium();
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $black-color;
+}
+
+.slide-description {
+  width: 490px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 130px;
+  text-align: justify;
+}
+
+.slide-description p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 28px;
+}
+
+.slide-controls {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 130px;
+}
+
+.slide-btn {
+  width: 15px;
+  height: 15px;
+  margin-left: 8px;
+  border: 2px solid $text-color;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.slide-btn--active {
+  background-color: #000000;
+}
