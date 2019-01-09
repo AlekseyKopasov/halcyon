@@ -1,0 +1,139 @@
+.advantage__header {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: #23222c;
+  background-image: url("../img/flower.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// TODO Добавить оверлей на фон
+
+.advantage__header-headline {
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 20px;
+
+  @include gotham-medium-book();
+
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.advantage__header-subheadline {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 130px;
+
+  @include gotham-medium-book();
+
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.advantage__header-subheadline span {
+  @include gotham-medium-italic();
+}
+
+.advantage__header-button {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 55px;
+  border-radius: 50%;
+  background-color: $green-color;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 10px;
+      height: 10px;
+      border-left: 3px solid #ffffff;
+      border-bottom: 3px solid #ffffff;
+      transform: rotate(-45deg);
+    }
+}
+
+.advantage__list{
+  @include list-reset();
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1140px;
+}
+
+.advantage__item {
+  width: 360px;
+}
+
+.advantage__image {
+  width: 360px;
+  height: 200px;
+  margin-bottom: 48px;
+}
+
+.advantage__image--creative {
+  background-color: #ea7567;
+}
+
+.advantage__image--think {
+  background-color: #06d2ea;
+}
+
+.advantage__image--pixel {
+  background-color: #3dc9b3;
+}
+
+.advantage__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+
+  @include gotham-medium();
+
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black-color;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      margin-left: -18px;
+      width: 35px;
+      height: 5px;
+      background-color: $green-color;
+    }
+}
+
+.advantage__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
