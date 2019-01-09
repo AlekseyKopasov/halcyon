@@ -11,6 +11,8 @@
 }
 
 // TODO Добавить оверлей на фон
+// TODO Добавить ховер на картинки преимуществ
+// TODO Добавить ховер на кнопку под преимуществами
 
 .advantage__header-headline {
   margin: 0;
@@ -74,6 +76,7 @@
   @include list-reset();
 
   margin: 0 auto;
+  padding-bottom: 77px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -136,4 +139,32 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+}
+
+.advantage-controls {
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+.advantage__button-wrapper {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #242830;
+}
+
+.advantage__button {
+  padding: 30px 40px;
+  @include  gotham-medium();
+
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+  background: transparent;
 }
