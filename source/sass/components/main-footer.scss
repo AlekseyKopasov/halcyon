@@ -1,0 +1,19 @@
+.main-footer {
+  background-color: $black-color;
+}
+
+.main-footer__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 55px 15px;
+}
+
+.main-footer__copyright,
+.main-footer__legals {
+  @include gotham-medium-book();
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $text-color;
+  text-decoration: none;
+}
