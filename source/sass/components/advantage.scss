@@ -1,14 +1,18 @@
 .advantage__header {
+  position: relative;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 100px;
   text-align: center;
-  background-color: #23222c;
-  background-image: url("../img/flower.jpg");
+}
+
+.overlay{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/flower.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 
 // TODO Добавить оверлей на фон
 // TODO Добавить ховер на картинки преимуществ
