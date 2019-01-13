@@ -1,8 +1,9 @@
 .slider {
   display: flex;
   flex-direction: row;
-  width: 1140px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .slide {
@@ -17,14 +18,29 @@
 }
 
 .slide-wrapper {
+  position: relative;
   width: 50%;
   margin-left: auto;
   background-color: #ffffff;
-  box-shadow: -31px -1px 35px -16px rgba(0, 0, 0, 0.2); // TODO подобрать тень или сделать фон
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 100%;
+    background-image: url("../img/bg_shadow-left.png");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
 }
 
 .slide-headline {
-  margin: 0;
+  position: relative;
+  width: 550px;
+  margin: 0 auto;
   padding: 0;
   padding-top: 130px;
   padding-bottom: 80px;
@@ -36,6 +52,18 @@
   font-weight: 500;
   text-transform: uppercase;
   color: $black-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 170px;
+    left: 74px;
+    width: 430px;
+    height: 15px;
+    background-image: url("../img/bg_headline.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .slide-description {
@@ -54,9 +82,11 @@
 }
 
 .slide-controls {
+  width: 100px;
+  margin: 0 auto;
+  padding-bottom: 130px;
   display: flex;
   justify-content: center;
-  padding-bottom: 130px;
 }
 
 .slide-btn {

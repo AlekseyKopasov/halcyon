@@ -1,4 +1,16 @@
+.our-teams {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.our-teams-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .our-teams__headline {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-top: 90px;
@@ -12,6 +24,18 @@
   text-transform: uppercase;
   color: $black-color;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 150px;
+    left: 315px;
+    width: 555px;
+    height: 15px;
+    background-image: url("../img/bg_headline.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .our-teams__list {
@@ -34,6 +58,24 @@
   padding-right: 15px;
 }
 
+.our-teams__item--dribbble {
+  background-image: url("../img/icon_dribbble.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.our-teams__item--twitter {
+  background-image: url("../img/icon_twitter.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.our-teams__item--email {
+  background-image: url("../img/icon_mail.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .our-teams__image {
   padding-bottom: 55px;
 }
@@ -53,17 +95,17 @@
   text-align: center;
   color: $black-color;
 
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 36px;
-      left: 50%;
-      margin-left: -18px;
-      width: 35px;
-      height: 5px;
-      background-color: $green-color;
-    }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    margin-left: -18px;
+    width: 35px;
+    height: 5px;
+    background-color: $green-color;
+  }
 }
 
 .our-teams__description {
@@ -92,12 +134,13 @@
   background-color: #242830;
   border-radius: 50%;
 
-    &:hover {
-      background-color: $green-color;
-    }
+  &:hover {
+    background-color: $green-color;
+  }
 }
 
 .our-teams-controls {
-  text-align: center;
+  width: 100px;
+  margin: 0 auto;
   padding-bottom: 110px;
 }
