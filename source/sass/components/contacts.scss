@@ -1,9 +1,18 @@
 .contacts {
+  width: 100%;
   background-color: #f5f5f5;
 }
 
+.contacts-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .contacts__headline {
-  margin: 0;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
   padding: 0;
   padding-top: 130px;
   padding-bottom: 130px;
@@ -16,13 +25,26 @@
   text-transform: uppercase;
   color: $black-color;
   text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 175px;
+    left: 140px;
+    width: 555px;
+    height: 15px;
+    background-image: url("../img/bg_headline.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .contacts__list {
-  width: 1170px;
+  width: 100%;
 
   @include list-reset();
 
+  padding: 0 15px;
   margin: 0 auto;
   padding-bottom: 100px;
   display: flex;
@@ -54,18 +76,37 @@
   text-align: center;
 }
 
+.contacts__title--address {
+  background-image: url("../img/icon_pin.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+}
+
+.contacts__title--phone {
+  background-image: url("../img/icon_mobile-phone.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+}
+
+.contacts__title--email {
+  background-image: url("../img/icon_airplane-black.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+}
+
 .contacts__description {
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
   font-size: 14px;
-  line-height: 18px ;
+  line-height: 18px;
 }
 
 .contacts__social-list {
   @include list-reset();
-  width: 100%;
+  width: 225px;
   padding-bottom: 110px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: row;
@@ -80,7 +121,25 @@
   background-color: #242830;
   border-radius: 50%;
 
-    &:hover {
-      background-color: $green-color;
-    }
+  &:hover {
+    background-color: $green-color;
+  }
+}
+
+.contacts__social-item--dribbble {
+  background-image: url("../img/icon_dribbble.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.contacts__social-item--twitter {
+  background-image: url("../img/icon_twitter.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.contacts__social-item--email {
+  background-image: url("../img/icon_mail.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }

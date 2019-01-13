@@ -2,7 +2,10 @@
   margin: 0 auto;
   text-align: center;
   background-color: #32353a;
-  background-image: url("../img/bg_subscribe.jpg");
+}
+
+.subscribe__overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg_subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,13 +13,16 @@
 
 .subscribe__form {
   position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
   padding-bottom: 150px;
-  background: $black-color;
-  opacity: 0.8;
 }
 
 .subscribe__headline {
-  margin: 0;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
   padding: 0;
   padding-top: 170px;
   padding-bottom: 45px;
@@ -28,29 +34,51 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #ffffff;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 125px;
+    left: 385px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/icon_airplane.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
 
 .subscribe__input {
   width: 360px;
   padding: 25px 10px;
-  // margin-bottom: 154px;
   border: 1px solid #ffffff;
   background: transparent;
   font: inherit;
   font-size: 15px;
   line-height: 18px;
   color: #ffffff;
+
+  &:hover {
+    outline: 2px solid $green-color;
+  }
 }
 
 .subscribe__button-send {
   padding: 27px;
+
   @include gotham-medium();
+
   font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: $green-color;
   border: none;
+
+  &:hover {
+    outline: 1px solid #ffffff;
+  }
 }
 
 .subscribe__button {
@@ -66,18 +94,16 @@
   background-color: #3dc9b3;
   opacity: 0.8;
 
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 18px;
-      left: 16px;
-      width: 10px;
-      height: 10px;
-      border-left: 3px solid #ffffff;
-      border-bottom: 3px solid #ffffff;
-      transform: rotate(135deg);
-    }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(135deg);
+  }
 }
-
-// TODO ДОбавить оверлей на фон

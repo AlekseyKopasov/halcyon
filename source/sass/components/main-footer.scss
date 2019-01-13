@@ -1,9 +1,10 @@
 .main-footer {
+  width: 100%;
   background-color: $black-color;
 }
 
 .main-footer__wrapper {
-  width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 55px 15px;
 }
