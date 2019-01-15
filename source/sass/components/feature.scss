@@ -14,7 +14,6 @@
 }
 
 .feature__headline {
-  width: 700px;
   position: relative;
   margin: 0 auto;
   padding: 0;
@@ -31,7 +30,8 @@
     position: absolute;
     content: "";
     top: 150px;
-    left: 75px;
+    left: 50%;
+    margin-left: -270px;
     width: 555px;
     height: 15px;
     background-image: url("../img/bg_headline.png");
@@ -41,7 +41,6 @@
 }
 
 .feature__list {
-  width: 1200px;
   display: flex;
   margin: 0;
   padding: 0 15px;
