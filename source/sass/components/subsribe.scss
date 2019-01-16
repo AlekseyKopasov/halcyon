@@ -13,7 +13,6 @@
 
 .subscribe__form {
   position: relative;
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   padding-bottom: 150px;
@@ -21,7 +20,6 @@
 
 .subscribe__headline {
   position: relative;
-  width: 800px;
   margin: 0 auto;
   padding: 0;
   padding-top: 170px;
@@ -40,7 +38,8 @@
     display: block;
     content: "";
     top: 125px;
-    left: 385px;
+    left: 50%;
+    margin-left: -13px;
     width: 26px;
     height: 26px;
     background-image: url("../img/icon_airplane.png");

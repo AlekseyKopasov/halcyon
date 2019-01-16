@@ -13,7 +13,6 @@
 }
 
 .main-header__promo-wrapper {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -84,7 +83,6 @@
 }
 
 .main-header__description-wrapper {
-  max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -105,7 +103,8 @@
     position: absolute;
     content: "";
     top: 50px;
-    left: 310px;
+    left: 50%;
+    margin-left: -270px;
     width: 555px;
     height: 15px;
     background-image: url("../img/bg_headline.png");
@@ -115,7 +114,6 @@
 }
 
 .main-header__description-text {
-  width: 780px;
   margin: 0 auto;
   padding: 0 26px;
   font-size: 14px;

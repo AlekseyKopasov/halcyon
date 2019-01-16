@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.advantage-slides {
+.advantage__slides {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -78,8 +78,6 @@
 }
 
 .advantage__list {
-  width: 1200px;
-
   @include list-reset();
 
   margin: 0 auto;

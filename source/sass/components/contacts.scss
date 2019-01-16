@@ -1,5 +1,4 @@
 .contacts {
-  width: 100%;
   background-color: #f5f5f5;
 }
 
@@ -11,7 +10,6 @@
 
 .contacts__headline {
   position: relative;
-  width: 800px;
   margin: 0 auto;
   padding: 0;
   padding-top: 130px;
@@ -30,7 +28,8 @@
     position: absolute;
     content: "";
     top: 175px;
-    left: 140px;
+    left: 50%;
+    margin-left: -270px;
     width: 555px;
     height: 15px;
     background-image: url("../img/bg_headline.png");
