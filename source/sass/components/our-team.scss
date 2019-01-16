@@ -57,19 +57,22 @@
   padding-right: 15px;
 }
 
-.our-teams__item--dribbble {
+.our-teams__item--dribbble,
+.our-teams__social-item--dribbble {
   background-image: url("../img/icon_dribbble.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.our-teams__item--twitter {
+.our-teams__item--twitter,
+.our-teams__social-item--twitter {
   background-image: url("../img/icon_twitter.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.our-teams__item--email {
+.our-teams__item--email,
+.our-teams__social-item--email {
   background-image: url("../img/icon_mail.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
