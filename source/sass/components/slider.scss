@@ -1,13 +1,12 @@
 .slider {
-  display: flex;
-  flex-direction: row;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.slide {
+.slider-slides {
+  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   background-color: #f3f5f5;
   background-image: url("../img/slider_iphone-5s.jpg");
@@ -16,8 +15,9 @@
   background-size: cover;
 }
 
-.slide-wrapper {
+.slider-slides__group {
   position: relative;
+  display: none;
   width: 50%;
   margin-left: auto;
   background-color: #ffffff;
@@ -34,6 +34,10 @@
     background-repeat: no-repeat;
     transform: rotate(180deg);
   }
+}
+
+.slider-slides__group--active {
+  display: block;
 }
 
 .slide-headline {
@@ -82,10 +86,12 @@
 
 .slide-controls {
   width: 100px;
+  bottom: -60px;
+  left: 75%;
+  position: absolute;
   margin: 0 auto;
+  margin-left: -50px;
   padding-bottom: 130px;
-  display: flex;
-  justify-content: center;
 }
 
 .slide-btn {

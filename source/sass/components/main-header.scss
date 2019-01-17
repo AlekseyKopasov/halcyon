@@ -20,7 +20,7 @@
 
 .main-header__headline {
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   padding-bottom: 30px;
 
   @include gotham-medium-book();
@@ -102,7 +102,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 50px;
+    bottom: 50px;
     left: 50%;
     margin-left: -270px;
     width: 555px;
@@ -120,6 +120,6 @@
   line-height: 30px;
 }
 
-.main-header__text-accent {
+.main-header__description-accent {
   color: $black-color;
 }
