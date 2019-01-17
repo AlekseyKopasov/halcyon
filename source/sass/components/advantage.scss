@@ -77,18 +77,31 @@
   }
 }
 
+.advantage__group {
+  display: none;
+}
+
+.advantage__group--active {
+  display: block;
+}
+
 .advantage__list {
   @include list-reset();
 
   margin: 0 auto;
-  padding-bottom: 77px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .advantage__item {
   width: 360px;
+  padding-bottom: 77px;
+}
+
+.advantage__link {
+  text-decoration: none;
 }
 
 .advantage__image {
@@ -131,7 +144,7 @@
 .advantage__img__title {
   margin: 0;
   padding: 0;
-  padding-top: 130px;
+  padding-top: 120px;
 
   @include gotham-medium();
   font-size: 15px;

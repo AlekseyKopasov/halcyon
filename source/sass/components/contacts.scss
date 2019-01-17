@@ -27,7 +27,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 175px;
+    bottom: 50px;
     left: 50%;
     margin-left: -270px;
     width: 555px;
@@ -45,15 +45,16 @@
 
   padding: 0 15px;
   margin: 0 auto;
-  padding-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contacts__item {
   width: 360px;
   text-align: center;
+  margin-bottom: 100px;
   padding-left: 15px;
   padding-right: 15px;
   background-color: #ffffff;
@@ -110,6 +111,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contacts__social-item {

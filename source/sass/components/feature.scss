@@ -29,7 +29,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 150px;
+    bottom: 50px;
     left: 50%;
     margin-left: -270px;
     width: 555px;
@@ -42,9 +42,9 @@
 
 .feature__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0 15px;
-  padding-bottom: 80px;
 }
 
 .feature__item {
@@ -55,6 +55,7 @@
 
   @include list-reset();
 
+  padding-bottom: 80px;
   padding-left: 15px;
   padding-right: 15px;
 
