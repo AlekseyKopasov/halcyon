@@ -1,13 +1,13 @@
 .slider {
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .slider-slides {
+  width: 1200px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
   background-color: #f3f5f5;
   background-image: url("../img/slider_iphone-5s.jpg");
   background-repeat: no-repeat;
@@ -98,6 +98,7 @@
   width: 15px;
   height: 15px;
   margin-left: 8px;
+  padding: 0;
   border: 2px solid $text-color;
   border-radius: 50%;
   background-color: #ffffff;

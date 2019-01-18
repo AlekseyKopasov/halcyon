@@ -9,7 +9,7 @@
   text-align: center;
   background-image: url("../img/bg_header.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .main-header__promo-wrapper {
@@ -66,6 +66,7 @@
   &:hover,
   &:focus {
     background-color: #74c8bb;
+    transition: 0.2s ease-in;
   }
 
   &:active {
@@ -114,6 +115,7 @@
 }
 
 .main-header__description-text {
+  width: 960px;
   margin: 0 auto;
   padding: 0 26px;
   font-size: 14px;
