@@ -120,8 +120,9 @@
 }
 
 .our-teams__description {
+  width: inherit;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   padding-bottom: 40px;
   font-size: 14px;
   line-height: 20px;
@@ -149,6 +150,7 @@
 
   &:hover {
     background-color: $green-color;
+    transition: 0.2s ease-in;
   }
 }
 
