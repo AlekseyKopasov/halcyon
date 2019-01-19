@@ -1,5 +1,6 @@
 .main-header {
   width: 100%;
+  position: relative;
 }
 
 .main-header__promo {
@@ -124,4 +125,137 @@
 
 .main-header__description-accent {
   color: $black-color;
+}
+
+.main-header__menu {
+  line-height: 50px;
+  display: flex;
+  position: absolute;
+  top: 13px;
+  right: 30px;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+}
+
+.main-header__menu-cross {
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-color: $black-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background: $black-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background: $black-color;
+  }
+}
+
+.main-header__menu-cross--onclick {
+  height: 0;
+  top: -17px;
+
+  &::before {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    content: "";
+    background-color: $black-color;
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    content: "";
+    background-color: $black-color;
+    transform: rotate(45deg);
+  }
+}
+
+.main-header__menu--open {
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.main-header__menu-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.main-header__menu-button--open {
+  top: 16px;
+  right: 30px;
+}
+
+.main-header__menu-list {
+  display: none;
+}
+
+.main-header__menu-list-show {
+  width: 100%;
+
+  @include list-reset();
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(47, 81, 105, 0.1);
+}
+
+.main-header__menu-item {
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $black-color;
+    transition: 0.2s linear;
+  }
+}
+
+.main-header__menu-item:hover .main-header__menu-link {
+  color: $black-color;
+}
+
+.main-header__menu-link {
+  @include gotham-medium();
+  text-transform: uppercase;
+  color: $text-color;
+  text-decoration: none;
 }
