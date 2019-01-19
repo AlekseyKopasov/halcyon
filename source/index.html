@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name = "description" content = "">
+  <link rel="preload" href="fonts/GothamRounded-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <title>halcyon</title>
 </head>
@@ -11,27 +13,30 @@
 <body>
 
   <header class="main-header">
-    <nav class="main-header__menu">
-      <button class="main-header__menu-button" type="button" onclick="window.main.toggleNav()">
-        <span class="main-header__menu-cross"></span>
+    <nav class="main-header__menu main-header__menu--active">
+      <button class="main-header__menu-button main-header__menu-button--active" type="button" onclick="window.main.toggleNav()">
+        <span class="main-header__menu-cross main-header__menu-cross--active">
+          <span class="visually-hidden">Меню</span>
+        </span>
       </button>
-      <ul class="main-header__menu-list">
+      <ul class="main-header__menu-list main-header__menu-list-active">
           <li class="main-header__menu-item">
-            <a href="#" class="main-header__menu-link">Feature</a>
+            <a href="#feature" class="main-header__menu-link">Feature</a>
           </li>
           <li class="main-header__menu-item">
-            <a href="#" class="main-header__menu-link">Our projects</a>
-          </li>
-          <li class="main-header__menu-item"><a href="#" class="main-header__menu-link">Advantage</a>
+            <a href="#our-projects" class="main-header__menu-link">Our projects</a>
           </li>
           <li class="main-header__menu-item">
-            <a href="#" class="main-header__menu-link">Our teams</a>
+            <a href="#advantage" class="main-header__menu-link">Advantage</a>
           </li>
           <li class="main-header__menu-item">
-            <a href="#" class="main-header__menu-link">Write to us</a>
+            <a href="#our-teams" class="main-header__menu-link">Our teams</a>
           </li>
           <li class="main-header__menu-item">
-            <a href="#" class="main-header__menu-link">Contacts</a>
+            <a href="#write-to-us" class="main-header__menu-link">Write to us</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a href="#contacts" class="main-header__menu-link">Contacts</a>
           </li>
       </ul>
     </nav>
@@ -63,7 +68,7 @@
   </header>
 
   <main class="main-content">
-    <section class="feature">
+    <section class="feature" id="feature">
       <div class="feature-wrapper">
         <h2 class="feature__headline">Love what you do, and you'll do it well</h2>
         <ul class="feature__list">
@@ -94,7 +99,7 @@
         </ul>
       </div>
     </section>
-    <section class="slider">
+    <section class="slider" id="our-projects">
       <div class="slider-slides">
         <div class="slider-slides__group slider-slides__group--active">
           <h2 class="slide-headline">Responsive design specialist</h2>
@@ -139,13 +144,13 @@
           </div>
         </div>
         <div class="slide-controls">
-          <button class="slide-btn slide-btn--active"></button>
-          <button class="slide-btn"></button>
-          <button class="slide-btn"></button>
+          <button class="slide-btn slide-btn--active" aria-label="Первый слайд"></button>
+          <button class="slide-btn" aria-label="Второй слайд"></button>
+          <button class="slide-btn" aria-label="Третий слайд"></button>
         </div>
       </div>
     </section>
-    <section class="advantage">
+    <section class="advantage" id="advantage">
       <div class="advantage__header">
         <h2 class="advantage__header-headline">I got 99 problem</h2>
         <div class="advantage-overlay"></div>
@@ -157,7 +162,7 @@
         <div class="advantage__group advantage__group--active">
           <ul class="advantage__list">
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--creative">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-1.webp 1x">
@@ -175,7 +180,7 @@
                 pulvinar imperdiet. Praesent non adipiscing libero.</p>
             </li>
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--think">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-2.webp 1x">
@@ -193,7 +198,7 @@
                 pulvinar imperdiet. Praesent non adipiscing libero.</p>
             </li>
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--pixel">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-3.webp 1x">
@@ -215,7 +220,7 @@
         <div class="advantage__group">
           <ul class="advantage__list">
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--creative">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-1.webp 1x">
@@ -233,7 +238,7 @@
                 pulvinar imperdiet. Praesent non adipiscing libero.</p>
             </li>
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--think">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-2.webp 1x">
@@ -251,7 +256,7 @@
                 pulvinar imperdiet. Praesent non adipiscing libero.</p>
             </li>
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--pixel">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-3.webp 1x">
@@ -273,7 +278,7 @@
         <div class="advantage__group">
           <ul class="advantage__list">
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--creative">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-1.webp 1x">
@@ -291,7 +296,7 @@
                 pulvinar imperdiet. Praesent non adipiscing libero.</p>
             </li>
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--think">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-2.webp 1x">
@@ -309,7 +314,7 @@
                 pulvinar imperdiet. Praesent non adipiscing libero.</p>
             </li>
             <li class="advantage__item">
-              <a href="#" class="advantage__link">
+              <a href="#" class="advantage__link" aria-label="Ссылка на работы">
                 <div class="advantage__image advantage__image--pixel">
                   <picture>
                     <source type="image/webp" srcset="img/advantage-3.webp 1x">
@@ -329,16 +334,16 @@
           </ul>
         </div>
         <div class="advantage-controls">
-          <button class="advantage-controls-btn slide-btn slide-btn--active"></button>
-          <button class="advantage-controls-btn slide-btn"></button>
-          <button class="advantage-controls-btn slide-btn"></button>
+          <button class="advantage-controls-btn slide-btn slide-btn--active" aria-label="Первая страница с преимуществами"></button>
+          <button class="advantage-controls-btn slide-btn" aria-label="Вторая страница с преимуществами"></button>
+          <button class="advantage-controls-btn slide-btn" aria-label="Третья страница с преимуществами"></button>
         </div>
       </div>
       <div class="advantage__button-wrapper">
-        <button class="advantage__button">Ignite your passion</button>
+        <a href="#" class="advantage__button"  aria-label="Узнать больше">Ignite your passion</a>
       </div>
     </section>
-    <section class="our-teams">
+    <section class="our-teams" id="our-teams">
       <div class="our-teams-wrapper">
         <h2 class="our-teams__headline">We're a team that above what we do</h2>
         <div class="our-teams__slides">
@@ -355,17 +360,17 @@
                   consectetur adipiscing elit. Nunc ultricies nulla non metus
                   pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter"  tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -383,17 +388,17 @@
                   consectetur adipiscing elit. Nunc ultricies nulla non metus
                   pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -412,17 +417,17 @@
                   facilis reprehenderit doloribus animi cumque enim dolorem
                   repudiandae.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -444,17 +449,17 @@
                   consectetur adipiscing elit. Nunc ultricies nulla non metus
                   pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble"  tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -472,17 +477,17 @@
                   consectetur adipiscing elit. Nunc ultricies nulla non metus
                   pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -501,17 +506,17 @@
                   facilis reprehenderit doloribus animi cumque enim dolorem
                   repudiandae.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -533,17 +538,17 @@
                   consectetur adipiscing elit. Nunc ultricies nulla non metus
                   pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble"  tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -561,17 +566,17 @@
                   consectetur adipiscing elit. Nunc ultricies nulla non metus
                   pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -590,17 +595,17 @@
                   facilis reprehenderit doloribus animi cumque enim dolorem
                   repudiandae.</p>
                 <ul class="our-teams__social-list">
-                  <li class="our-teams__social-item our-teams__social-item--dribbble">
+                  <li class="our-teams__social-item our-teams__social-item--dribbble" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--dribbble">
                       <span class="visually-hidden">Dribbble</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--twitter">
+                  <li class="our-teams__social-item our-teams__social-item--twitter" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--twitter">
                       <span class="visually-hidden">Twitter</span>
                     </a>
                   </li>
-                  <li class="our-teams__social-item our-teams__social-item--email">
+                  <li class="our-teams__social-item our-teams__social-item--email" tabindex="0">
                     <a href="" class="our-teams__link our-teams__link--email">
                       <span class="visually-hidden">Goggle mails</span>
                     </a>
@@ -610,25 +615,25 @@
             </ul>
           </div>
           <div class="our-teams-controls">
-            <button class="our-teams-controls-btn slide-btn slide-btn--active"></button>
-            <button class="our-teams-controls-btn slide-btn"></button>
-            <button class="our-teams-controls-btn slide-btn"></button>
+            <button class="our-teams-controls-btn slide-btn slide-btn--active" aria-label="Первая страница"></button>
+            <button class="our-teams-controls-btn slide-btn" aria-label="Вторая страница"></button>
+            <button class="our-teams-controls-btn slide-btn" aria-label="Третья страница"></button>
           </div>
         </div>
       </div>
     </section>
-    <section class="subscribe subscribe--overlay">
+    <section class="subscribe subscribe--overlay" id="write-to-us">
       <a id="subscribe"><span class="visually-hidden">Scroll up</span></a>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="subscribe__headline">Subscribe to stay in the loop</h2>
         <label class="subscribe__label" for="form-subscribe"><span class="visually-hidden">Subscribe</span></label>
-        <input class="subscribe__input" id="form-subscribe" type="email"
+        <input class="subscribe__input" id="form-subscribe" type="email" title="Ваш email-адрес"
           placeholder="example@email.com">
-        <button class="subscribe__button-send" type="submit">Send</button>
+        <button class="subscribe__button-send" type="submit" title="Подписаться">Send</button>
         <a href="#subscribe" class="subscribe__button"><span class="visually-hidden">Subscribe</span></a>
       </form>
     </section>
-    <section class="contacts">
+    <section class="contacts"id="contacts">
       <div class="contacts-wrapper">
         <h2 class="contacts__headline">Drop us a line</h2>
         <ul class="contacts__list">
@@ -646,13 +651,13 @@
           </li>
         </ul>
         <ul class="contacts__social-list">
-          <li class="contacts__social-item contacts__social-item--dribbble">
+          <li class="contacts__social-item contacts__social-item--dribbble" tabindex="0">
             <a class="contacts__social-link" href="#"><span class="visually-hidden">Dribbble</span></a>
           </li>
-          <li class="contacts__social-item contacts__social-item--twitter">
+          <li class="contacts__social-item contacts__social-item--twitter" tabindex="0">
             <a class="contacts__social-link" href="#"><span class="visually-hidden">Twitter</span></a>
           </li>
-          <li class="contacts__social-item  contacts__social-item--email">
+          <li class="contacts__social-item  contacts__social-item--email" tabindex="0">
             <a class="contacts__social-link" href="#"><span class="visually-hidden">Goggle
                 mail</span></a>
           </li>
@@ -668,7 +673,7 @@
       <a class="main-footer__legals" href="#">Legals</a>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>

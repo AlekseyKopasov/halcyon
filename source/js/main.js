@@ -8,30 +8,35 @@
   let toggleNavStatus = false;
 
   if (menuElement) {
+    menuElement.classList.remove('main-header__menu--active');
+    menuListElement.classList.remove('main-header__menu-list-active');
+    menuButtonElement.classList.remove('main-header__menu-button--active');
+    crossElement.classList.remove('main-header__menu-cross--active');
+
     let addClassesToMenu = () => {
-      menuElement.classList.add('main-header__menu--open');
-      menuButtonElement.classList.add('main-header__menu-button--open');
-      menuListElement.classList.add('main-header__menu-list-show');
-      crossElement.classList.add('main-header__menu-cross--onclick');
+      menuElement.classList.add('main-header__menu--active');
+      menuButtonElement.classList.add('main-header__menu-button--active');
+      menuListElement.classList.add('main-header__menu-list-active');
+      crossElement.classList.add('main-header__menu-cross--active');
       toggleNavStatus = true;
     };
 
     let removeClassesFromMenu = () => {
-      menuElement.classList.remove('main-header__menu--open');
-      menuListElement.classList.remove('main-header__menu-list-show');
-      menuButtonElement.classList.remove('main-header__menu-button--open');
-      crossElement.classList.remove('main-header__menu-cross--onclick');
+      menuElement.classList.remove('main-header__menu--active');
+      menuListElement.classList.remove('main-header__menu-list-active');
+      menuButtonElement.classList.remove('main-header__menu-button--active');
+      crossElement.classList.remove('main-header__menu-cross--active');
       toggleNavStatus = false;
     };
 
-  window.main = {
-    toggleNav: () => {
-      if (toggleNavStatus === false) {
-        addClassesToMenu();
-      } else if (toggleNavStatus === true) {
-        removeClassesFromMenu();
+    window.main = {
+      toggleNav: () => {
+        if (toggleNavStatus === false) {
+          addClassesToMenu();
+        } else if (toggleNavStatus === true) {
+          removeClassesFromMenu();
+        }
       }
     }
   }
-}
 })();
