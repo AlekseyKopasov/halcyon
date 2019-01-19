@@ -35,8 +35,8 @@ gulp.task('css', function () {
 // Минификация JS-скриптов
 gulp.task('script', function () {
   return gulp.src('source/js/*.js')
-  .pipe(uglify())
-  .pipe(rename('script.min.js'))
+  // .pipe(uglify())
+  // .pipe(rename('main.min.js'))
   .pipe(gulp.dest('build/js'));
 });
 

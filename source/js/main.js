@@ -1,10 +1,11 @@
 'use strict';
 
 (function () {
-  let menuElement = document.querySelector('.main-header__menu');
-  let menuButtonElement = document.querySelector('.main-header__menu-button');
-  let menuListElement = document.querySelector('.main-header__menu-list');
-  let crossElement = document.querySelector('.main-header__menu-cross');
+
+  const menuElement = document.querySelector('.main-header__menu');
+  const menuButtonElement = document.querySelector('.main-header__menu-button');
+  const menuListElement = document.querySelector('.main-header__menu-list');
+  const crossElement = document.querySelector('.main-header__menu-cross');
   let toggleNavStatus = false;
 
   if (menuElement) {
