@@ -8,6 +8,7 @@
   padding-top: 257px;
   padding-bottom: 343px;
   text-align: center;
+  background-color: #f3f5f8;
   background-image: url("../img/bg_header.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -130,13 +131,15 @@
 .main-header__menu {
   line-height: 50px;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 13px;
   right: 30px;
   justify-content: center;
 
   width: 30px;
   height: 30px;
+
+  z-index: 10;
 }
 
 .main-header__menu-cross {
@@ -169,7 +172,7 @@
   }
 }
 
-.main-header__menu-cross--onclick {
+.main-header__menu-cross--active {
   height: 0;
   top: -17px;
 
@@ -196,7 +199,7 @@
   }
 }
 
-.main-header__menu--open {
+.main-header__menu--active {
   background-color: transparent;
   width: 100%;
   top: 0;
@@ -212,10 +215,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 99;
+  z-index: 11;
 }
 
-.main-header__menu-button--open {
+.main-header__menu-button--active {
   top: 16px;
   right: 30px;
 }
@@ -224,7 +227,7 @@
   display: none;
 }
 
-.main-header__menu-list-show {
+.main-header__menu-list-active {
   width: 100%;
 
   @include list-reset();
@@ -238,7 +241,6 @@
 }
 
 .main-header__menu-item {
-  padding: 15px;
   box-sizing: border-box;
   border: 1px solid transparent;
 
@@ -254,6 +256,9 @@
 }
 
 .main-header__menu-link {
+  display: block;
+  padding: 15px;
+
   @include gotham-medium();
   text-transform: uppercase;
   color: $text-color;
