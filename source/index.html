@@ -11,7 +11,30 @@
 <body>
 
   <header class="main-header">
-    <nav class="main-header__menu"></nav>
+    <nav class="main-header__menu">
+      <button class="main-header__menu-button" type="button" onclick="window.main.toggleNav()">
+        <span class="main-header__menu-cross"></span>
+      </button>
+      <ul class="main-header__menu-list">
+          <li class="main-header__menu-item">
+            <a href="#" class="main-header__menu-link">Feature</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a href="#" class="main-header__menu-link">Our projects</a>
+          </li>
+          <li class="main-header__menu-item"><a href="#" class="main-header__menu-link">Advantage</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a href="#" class="main-header__menu-link">Our teams</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a href="#" class="main-header__menu-link">Write to us</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a href="#" class="main-header__menu-link">Contacts</a>
+          </li>
+      </ul>
+    </nav>
     <div class="main-header__promo">
       <div class="main-header__promo-wrapper">
         <h1 class="main-header__headline">Halcyon<span class="main-header__headline main-header__headline--grey">Days</span>
@@ -645,5 +668,7 @@
       <a class="main-footer__legals" href="#">Legals</a>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
