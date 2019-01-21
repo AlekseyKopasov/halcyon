@@ -15,66 +15,65 @@
   const teamGroupelements = teamElement.querySelectorAll('.our-teams__group');
   const teamButtonElements = teamElement.querySelectorAll('.our-teams-controls-btn');
 
-  let checkClass = (evt, slides, buttons) => {
-    slides.forEach((element) => {
-      element.classList.remove('slider-slides__group--active');
+  const classActiveSliderGrout = 'slider-slides__group--active';
+  const classActiveAdvantageGroup = 'advantage__group--active';
+  const classActiveTeamsGroup = 'our-teams__group--active';
+  const classActiveSliderButton = 'slide-btn--active';
+
+  const backgroundSize = '100% 100%';
+
+  const slider = {
+    slides: slideElements,
+    buttons: slideButtonElements,
+    classActiveGroup: classActiveSliderGrout,
+    classActiveButton: classActiveSliderButton
+  };
+
+  const advantage = {
+    slides: advantageElements,
+    buttons: advantageButtonElements,
+    classActiveGroup: classActiveAdvantageGroup,
+    classActiveButton: classActiveSliderButton
+  };
+
+  const teams = {
+    slides: teamGroupelements,
+    buttons: teamButtonElements,
+    classActiveGroup: classActiveTeamsGroup,
+    classActiveButton: classActiveSliderButton
+  };
+
+  let slide = (evt, slideObject) => {
+    slideObject.slides.forEach((slide) => {
+      slide.classList.remove(slideObject.classActiveGroup);
     });
-    buttons.forEach((element) => {
-      element.classList.remove('slide-btn--active');
+    slideObject.buttons.forEach((button) => {
+      button.classList.remove(slideObject.classActiveButton);
     });
 
-    evt.target.classList.add('slide-btn--active');
+    evt.target.classList.add(slideObject.classActiveButton);
 
     let value = evt.target.value;
 
-    Array.from(slideElements)[value].classList.add('slider-slides__group--active');
-    sliderContainerElement.style.backgroundImage = 'url("../img/slider_phone-' + (parseInt(value, 10) + 1) + '.jpg")';
-    sliderContainerElement.style.backgroundSize = '100% 100%';
-  };
-
-  let checkAdvantage = (evt) => {
-    if (advantageSliderElement) {
-      advantageElements.forEach((element) => {
-        element.classList.remove('advantage__group--active');
-      });
-      advantageButtonElements.forEach((element) => {
-        element.classList.remove('slide-btn--active');
-      });
-      evt.target.classList.add('slide-btn--active');
-
-      let value = evt.target.value;
-
-      Array.from(advantageElements)[value].classList.add('advantage__group--active');
-    }
-  };
-
-  let checkTeams = (evt) => {
-    if (teamElement) {
-      teamGroupelements.forEach((element) => {
-        element.classList.remove('our-teams__group--active');
-      });
-      teamButtonElements.forEach((element) => {
-        element.classList.remove('slide-btn--active');
-      });
-      evt.target.classList.add('slide-btn--active');
-
-      let value = evt.target.value;
-
-      Array.from(teamGroupelements)[value].classList.add('our-teams__group--active');
-    }
+    Array.from(slideObject.slides)[value].classList.add(slideObject.classActiveGroup);
   };
 
   let onSliderButtonClick = (evt) => {
-    checkClass(evt, slideElements, slideButtonElements);
+    slide(evt, slider);
+
+    let value = evt.target.value;
+    sliderContainerElement.style.backgroundImage = 'url("../img/slider_phone-' + (parseInt(value, 10) + 1) + '.jpg")';
+    sliderContainerElement.style.backgroundSize = backgroundSize;
   };
 
   let onSliderAdvantageButtonClick = (evt) => {
-    checkAdvantage(evt);
+    slide(evt, advantage);
   };
 
   let onTeamButtonClick = (evt) => {
-    checkTeams(evt);
+    slide(evt, teams);
   }
+
   window.slides = {
     check: slideButtonElements.forEach((element) => {
       element.addEventListener('click', onSliderButtonClick);
