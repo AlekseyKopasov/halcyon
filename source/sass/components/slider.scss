@@ -1,26 +1,32 @@
 .slider {
-  margin: 0 auto;
+  margin: 0 auto 130px;
+  position: relative;
+  min-height: 570px;
 }
 
 .slider-slides {
   width: 1200px;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0 auto;
-  position: relative;
+  margin-right: 204px;
   display: flex;
   flex-direction: column;
   background-color: #f3f5f5;
   background-image: url("../img/slider_phone-1.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: auto;
 }
 
 .slider-slides__group {
   position: relative;
   display: none;
-  width: 50%;
-  min-height: 570px;
+  width: 585px;
   margin-left: auto;
+  margin-bottom: -13px;
+  padding-bottom: 100px;
   background-color: #ffffff;
 
   &::before {
@@ -46,14 +52,16 @@
   width: 550px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 70px;
   padding-top: 130px;
-  padding-bottom: 80px;
+  padding-bottom: 75px;
   text-align: center;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
+  letter-spacing: 2.3px;
   text-transform: uppercase;
   color: $black-color;
 
@@ -61,7 +69,7 @@
     position: absolute;
     content: "";
     top: 170px;
-    left: 74px;
+    left: 94px;
     width: 430px;
     height: 15px;
     background-image: url("../img/bg_headline.png");
@@ -71,33 +79,34 @@
 }
 
 .slide-description {
-  width: 490px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 130px;
-  text-align: justify;
+  padding-left: 98px;
+  padding-right: 10px;
 }
 
-.slide-description p {
+.slide-text {
+  @include gotham-medium-book();
+
   margin: 0;
-  padding: 0;
-  padding-bottom: 28px;
+  padding: 0 0 20px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .slide-controls {
-  width: 100px;
-  bottom: -60px;
-  left: 75%;
-  position: absolute;
-  margin: 0 auto;
-  margin-left: -50px;
-  padding-bottom: 130px;
+  width: 585px;
+  position: relative;
+  bottom: 0;
+  right: -30px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
 }
 
 .slide-btn {
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   margin-left: 8px;
   padding: 0;
   border: 2px solid $text-color;
