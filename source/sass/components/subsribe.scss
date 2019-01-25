@@ -15,22 +15,23 @@
   position: relative;
   margin: 0 auto;
   padding: 0 15px;
-  padding-bottom: 150px;
+  padding-bottom: 153px;
 }
 
 .subscribe__headline {
   position: relative;
   margin: 0 auto;
   padding: 0;
+  padding-left: 2px;
   padding-top: 170px;
-  padding-bottom: 45px;
+  padding-bottom: 42px;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
 
   font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2.4px;
   color: #ffffff;
 
   &::before {
@@ -49,8 +50,9 @@
 }
 
 .subscribe__input {
-  width: 360px;
-  padding: 25px 10px;
+  width: 353px;
+  margin-left: 5px;
+  padding: 24px 10px;
   border: 1px solid #ffffff;
   background: transparent;
   font: inherit;
@@ -64,12 +66,14 @@
 }
 
 .subscribe__button-send {
-  padding: 27px;
+  margin: 0 auto;
+  padding: 25px;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
 
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
+  letter-spacing: 2.2px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: $green-color;
@@ -83,12 +87,12 @@
 .subscribe__button {
   position: absolute;
   display: inline-block;
-  bottom: -75px;
+  bottom: -80px;
   left: 50%;
-  width: 43px;
-  height: 43px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 55px;
-  margin-left: -21px;
+  margin-left: -22px;
   border-radius: 50%;
   background-color: #3dc9b3;
   opacity: 0.8;
@@ -97,10 +101,10 @@
     content: "";
     display: block;
     position: absolute;
-    top: 18px;
+    top: 21px;
     left: 16px;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     border-left: 3px solid #ffffff;
     border-bottom: 3px solid #ffffff;
     transform: rotate(135deg);

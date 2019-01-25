@@ -20,7 +20,7 @@
   const classActiveTeamsGroup = 'our-teams__group--active';
   const classActiveSliderButton = 'slide-btn--active';
 
-  const backgroundSize = '100% 100%';
+  const backgroundSize = 'auto';
 
   const slider = {
     slides: slideElements,

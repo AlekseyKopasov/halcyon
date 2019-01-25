@@ -18,11 +18,11 @@
 }
 
 .advantage__header-headline {
-  width: 615px;
   margin: 0 auto;
-  padding: 0 15px;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding: 0;
+  padding-top: 72px;
+  padding-bottom: 13px;
+  padding-left: 10px;
 
   @include gotham-medium-book();
 
@@ -35,17 +35,17 @@
 }
 
 .advantage__header-subheadline {
-  width: 615px;
   margin: 0 auto;
-  padding: 0 15px;
-  padding-bottom: 130px;
+  padding: 0;
+  padding-left: 9px;
+  padding-bottom: 37px;
 
   @include gotham-medium-book();
 
-  font-size: 25px;
+  font-size: 24px;
   line-height: 30px;
-  letter-spacing: 24px;
   text-transform: uppercase;
+  letter-spacing: 8px;
   text-align: center;
   color: #ffffff;
 }
@@ -56,6 +56,8 @@
 
 .advantage__header-button {
   position: relative;
+  bottom: 0;
+  left: 16px;
   display: inline-block;
   width: 43px;
   height: 43px;
@@ -79,6 +81,7 @@
 
 .advantage__group {
   display: none;
+  padding: 0 15px;
 }
 
 .advantage__group--active {
@@ -98,7 +101,7 @@
 
 .advantage__item {
   width: 360px;
-  padding-bottom: 77px;
+  padding-bottom: 67px;
 }
 
 .advantage__link {
@@ -109,7 +112,7 @@
   position: relative;
   width: 360px;
   height: 200px;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 
 .advantage__image--creative {
@@ -138,7 +141,7 @@
   display: block;
   background: rgba(113, 176, 156, 0.7) url("../img/icon_search.png");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 44%;
 }
 
 .advantage__img__title {
@@ -158,9 +161,9 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
 
   font-size: 15px;
   line-height: 18px;
@@ -173,7 +176,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 36px;
+    top: 31px;
     left: 50%;
     margin-left: -18px;
     width: 35px;
@@ -191,27 +194,30 @@
 }
 
 .advantage-controls {
-  width: 100px;
-  margin: 0 auto;
+  text-align: center;
   padding-bottom: 110px;
+}
+
+.advantage-controls .slide-btn {
+  margin: 0 2px;
 }
 
 .advantage__button-wrapper {
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 88px;
+  padding-bottom: 88px;
   text-align: center;
   background-color: #242830;
 }
 
 .advantage__button {
-  padding: 30px 40px;
+  padding: 29px 40px;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
 
   font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 2px;
+  line-height: 20px;
+  letter-spacing: 2.2px;
 
   text-transform: uppercase;
   text-decoration: none;

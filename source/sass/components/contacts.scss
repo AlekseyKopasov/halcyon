@@ -11,15 +11,15 @@
 .contacts__headline {
   position: relative;
   margin: 0 auto;
-  padding: 0;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 125px 0 130px 3px;
 
   @include gotham-medium();
 
   font-size: 15px;
   line-height: 18px;
+  font-weight: 600;
   letter-spacing: 2px;
+  word-spacing: 3px;
   text-transform: uppercase;
   color: $black-color;
   text-align: center;
@@ -27,9 +27,9 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 50px;
+    bottom: 93px;
     left: 50%;
-    margin-left: -270px;
+    margin-left: -278px;
     width: 555px;
     height: 15px;
     background-image: url("../img/bg_headline.png");
@@ -62,15 +62,13 @@
 
 .contacts__title {
   margin: 0;
-  padding: 0;
-  padding-top: 65px;
-  padding-bottom: 30px;
+  padding: 61px 0 25px 6px;
 
   @include gotham-medium();
 
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: $green-color;
   text-align: center;
@@ -79,27 +77,29 @@
 .contacts__title--address {
   background-image: url("../img/icon_pin.png");
   background-repeat: no-repeat;
-  background-position: center 30px;
+  background-position: center 28px;
 }
 
 .contacts__title--phone {
   background-image: url("../img/icon_mobile-phone.png");
   background-repeat: no-repeat;
-  background-position: center 30px;
+  background-position: center 28px;
 }
 
 .contacts__title--email {
   background-image: url("../img/icon_airplane-black.png");
   background-repeat: no-repeat;
-  background-position: center 30px;
+  background-position: center 23px;
 }
 
 .contacts__description {
   margin: 0;
-  padding: 0;
-  padding-bottom: 30px;
+  padding: 0 0 28px;
+
+  @include gotham-medium();
   font-size: 14px;
   line-height: 18px;
+  font-weight: 600;
 }
 
 .contacts__social-list {
@@ -117,8 +117,8 @@
 .contacts__social-item {
   width: 40px;
   height: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10px;
+  margin-right: 11px;
   background-color: #242830;
   border-radius: 50%;
 

@@ -13,10 +13,10 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 90px;
-  padding-bottom: 103px;
+  padding-top: 84px;
+  padding-bottom: 96px;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
 
   font-size: 15px;
   line-height: 18px;
@@ -28,8 +28,8 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 50px;
-    left: 315px;
+    bottom: 66px;
+    left: 306px;
     width: 555px;
     height: 15px;
     background-image: url("../img/bg_headline.png");
@@ -40,6 +40,7 @@
 
 .our-teams__group {
   display: none;
+  margin-bottom: 10px;
 }
 
 .our-teams__group--active {
@@ -51,6 +52,7 @@
   @include list-reset();
 
   margin: 0 auto;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -89,16 +91,16 @@
 }
 
 .our-teams__image {
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 }
 
 .our-teams__title {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
 
   font-size: 15px;
   line-height: 18px;
@@ -111,7 +113,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 36px;
+    top: 33px;
     left: 50%;
     margin-left: -18px;
     width: 35px;
@@ -124,8 +126,10 @@
   width: inherit;
   margin: 0;
   padding: 0 15px;
-  padding-bottom: 40px;
-  font-size: 14px;
+  padding-bottom: 15px;
+
+  @include gotham-medium();
+  font-size: 15px;
   line-height: 20px;
   text-align: center;
   flex-grow: 1;
@@ -156,9 +160,12 @@
 }
 
 .our-teams-controls {
-  width: 100px;
-  margin: 0 auto;
-  padding-bottom: 110px;
+  padding-bottom: 103px;
+  text-align: center;
+}
+
+.our-teams-controls-btn {
+  margin: 0 2px;
 }
 
 @keyframes bounceInRight {

@@ -18,10 +18,11 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 100px;
-  padding-bottom: 130px;
+  padding-bottom: 123px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
+  letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
   color: $black-color;
@@ -29,9 +30,9 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 50px;
+    bottom: 88px;
     left: 50%;
-    margin-left: -270px;
+    margin-left: -277px;
     width: 555px;
     height: 15px;
     background-image: url("../img/bg_headline.png");
@@ -41,10 +42,12 @@
 }
 
 .feature__list {
+  width: 1140px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
 }
 
 .feature__item {
@@ -55,20 +58,17 @@
 
   @include list-reset();
 
-  padding-bottom: 80px;
-  padding-left: 15px;
-  padding-right: 15px;
-
+  padding-bottom: 120px;
   text-align: center;
 }
 
 .feature__item-headline {
   position: relative;
   margin: 0;
-  padding: 0;
-  padding-bottom: 60px;
+  padding: 0 15px;
+  padding-bottom: 50px;
 
-  @include gotham-medium();
+  @include gotham-medium-book();
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
@@ -89,7 +89,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 245px;
+    top: 240px;
     left: 50%;
     margin-left: -18px;
     width: 35px;
@@ -108,9 +108,10 @@
 
 .feature__item-headline--web {
   &::before {
+    margin-left: 15px;
     background-image: url("../img/icon_arrows.png");
     background-repeat: no-repeat;
-    background-position: 42px 51px;
+    background-position: 45px 51px;
   }
 }
 
@@ -118,14 +119,19 @@
   &::before {
     background-image: url("../img/icon_heart.png");
     background-repeat: no-repeat;
-    background-position: 42px 51px;
+    background-position: 44px 47px;
   }
 }
 
 .feature__item-description {
   width: inherit;
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
+
+  @include gotham-medium();
+
   font-size: 14px;
+  font-weight: 600;
   line-height: 20px;
+  word-spacing: 3px;
 }
