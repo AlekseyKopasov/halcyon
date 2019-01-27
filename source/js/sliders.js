@@ -151,7 +151,7 @@
     slide(evt, slider);
 
     let value = evt.target.value;
-    sliderContainerElement.style.backgroundImage = 'url("../img/slider_phone-' + (parseInt(value, 10) + 1) + '.jpg")';
+    sliderContainerElement.style.backgroundImage = 'url("img/slider_phone-' + (parseInt(value, 10) + 1) + '.jpg")';
     sliderContainerElement.style.backgroundSize = backgroundSize;
   };
 
