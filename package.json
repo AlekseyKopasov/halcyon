@@ -7,7 +7,7 @@
     "@babel/preset-env": "^7.3.1",
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
-    "browser-sync": "2.24.x",
+    "browser-sync": "2.27.x",
     "del": "^3.0.0",
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.1.0",
